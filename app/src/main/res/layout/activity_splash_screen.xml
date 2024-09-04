@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F6">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="297dp"
+        android:layout_height="261dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/logo" />
+
+    <!-- App Name or Tagline -->
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:text="Jazz Mosafir"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Loading Indicator (Optional) -->
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:indeterminate="true"
+        android:visibility="visible"/>
+
+</RelativeLayout>
